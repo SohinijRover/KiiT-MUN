@@ -1,0 +1,23 @@
+export const DelAffairs = [
+    { imgSource: "https://i.ibb.co/cQ0G34d/Apaar-Vashistha.webp",
+        name: "Apaar Vashistha", position: "Under Secretary General" },
+    { imgSource: "https://i.ibb.co/6nkBKR1/Arpit-Kumar.webp",
+        name: "Arpit Kumar", position: "Under Secretary General" },
+    { imgSource: "https://i.ibb.co/vdG2N2T/Arpita-Mohanty.webp",
+        name: "Arpita Mohanty", position: "Director" },
+    { imgSource: "https://i.ibb.co/Hg5MXrK/Amrita-haldar.webp",
+        name: "Amrita Haldar", position: "Director" },
+    { imgSource: "https://i.ibb.co/JvSstRC/Anish-Singh.webp",
+        name: "Anish Singh", position: "Deputy Director" },
+    { imgSource: "https://i.ibb.co/rpRPg3m/Ashish-Anand.webp",
+        name: "Ashish Anand", position: "Deputy Director" },
+    { imgSource: "https://i.ibb.co/TWmf9Nr/Abhinav-Agarwal.webp",
+        name: "Abhinav Agarwal", position: "Officer" },
+    { imgSource: "https://i.ibb.co/4f1W12x/Ayushi-Harshal.webp",
+        name: "Ayushi Harshal", position: "Officer" },
+    { imgSource: "https://i.ibb.co/7NdSVv9/Deepika-Soni.webp",
+        name: "Deepika Soni", position: "Officer" },
+    { imgSource: "https://i.ibb.co/0m7HcRr/Lavanya.webp",
+        name: "Lavanya", position: "Officer" },
+
+]

@@ -1,0 +1,23 @@
+export const Design = [
+    { imgSource: "https://i.ibb.co/7GRJv1y/aryan-pattnaik.webp",
+        name: "Aryan Pattnaik", position: "Under Secretary General" },
+    { imgSource: "https://i.ibb.co/7SVrLp0/Aditi-Pattnaik.webp",
+        name: "Aditi Pattnaik", position: "Director" },
+    { imgSource: "https://i.ibb.co/SnQT6xW/Ashutosh-Rath.webp",
+        name: "Ashutosh Rath", position: "Deputy Director" },
+    { imgSource: "https://i.ibb.co/TrQHnLY/avanip-kumar.webp",
+        name: "Avanip Kumar", position: "Deputy Director" },
+    { imgSource: "https://i.ibb.co/cDYPNBF/Kanishq-Mandhyan.webp",
+        name: "Kanishq Mandhyan", position: "Deputy Director" },
+    { imgSource: "https://i.ibb.co/0FtJbFs/piyush-ranjan-satapathy.webp",
+        name: "Piyush Ranjan Satapathy", position: "Deputy Director" },
+    { imgSource: "https://i.ibb.co/T0r2wcH/abir-sarkar.webp",
+        name: "Abir Sarkar", position: "Officer" },
+    { imgSource: "https://i.ibb.co/BnbYq7S/romancho.webp",
+        name: "Romancho Basu", position: "Officer" },
+    { imgSource: "https://i.ibb.co/yn49D6t/sayantan.webp",
+        name: "Sayantan Sabud", position: "Officer" },
+    { imgSource: "https://i.ibb.co/yN2QPdP/siddharth.webp",
+        name: "Siddharth Panda", position: "Officer" },
+
+]

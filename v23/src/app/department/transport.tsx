@@ -1,0 +1,23 @@
+export const transport =[
+    { imgSource: "https://i.ibb.co/yRHts4f/Binayak-Satapathy-Transport.webp",
+        name: "Binayak Satapathy", position: "Under Secretary General" },
+    { imgSource: "https://i.ibb.co/H7FrkYS/Harsh-Raj-Transport.webp",
+        name: "Harsh Raj", position: "Director" },
+    { imgSource: "https://i.ibb.co/XWLFfvH/Ketan-Kumar-Transport.webp",
+        name: "Ketan Kumar", position: "Director" },
+    { imgSource: "https://i.ibb.co/gWNMtpP/Priti-Mohan-Pattanayak-Transport.webp",
+        name: "Priti Mohan Pattanayak", position: "Deputy Director" },
+    { imgSource: "https://i.ibb.co/br9qdTG/Abhijit-Prusty-Transport.webp",
+        name: "Abhijit Prusty", position: "Officer" },
+    { imgSource: "https://i.ibb.co/QPLyQX6/Amritanshu-Transport.webp",
+        name: "Amritanshu", position: "Officer" },
+    { imgSource: "https://i.ibb.co/Ry1s9S5/Priyanshukumar-Transport.webp",
+        name: "Priyanshu Kumar", position: "Officer" },
+    { imgSource: "https://i.ibb.co/mDyy22n/Reyansh.webp",
+        name: "Reyansh", position: "Officer" },
+    { imgSource: "https://i.ibb.co/PFkYKRR/Somya-Ranjan-Transport.webp",
+        name: "Somya Ranjan", position: "Officer" },
+    { imgSource: "https://i.ibb.co/XCBmhrH/Yash-Kirty-Transport.webp",
+        name: "Yash Kirty", position: "Officer" },
+
+]
