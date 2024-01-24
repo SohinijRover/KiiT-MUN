@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KIIT MUN 2020</title>
+	<link rel="icon" href="./img/mun-logo.png" sizes="any" type="image/png">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.img-fluid.mobile 
+		{
+		  display: none;
+		}
+		.container-fluid {
+            display: grid;
+            height: 100%;
+        }
+		.img-fluid {
+			min-width: 100%;
+			height: 100vh;
+			background-size: cover;
+		}
+
+		@media only screen and (max-device-width: 500px) 
+		{
+			body{
+				overflow-x: hidden;
+			}
+			.img-fluid 
+			{
+				display: none;
+			}
+			.img-fluid.mobile 
+			{
+				width :100%;
+				height: 100vh;
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid" style="margin: 0; padding: 0;">
+		<img class="img-fluid" src="./img/coming-soon.png">
+		<img class="img-fluid mobile" src="./img/coming-soon-mob.png">
+	</div>
+</body>
+</html>

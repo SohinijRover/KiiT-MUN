@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="darkM.css">
+    <link rel="stylesheet" href="assets/css/flipdown.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> KIIT MUN </title>
+    <meta name="keywords" content="model united nations,international mun,international model united nation,
+mun india,mun conferences,model un,model united nations india,model united nations conference,mun 2022,model united nations 2022,mun united nations,mun delegates,mun conference 2022,model united nations, mun, 
+mun conferences 2022,model un registration">
+    <meta name='description' content="Official Website of KIITMUN 2022">
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="assets/js/flipdown.js"></script>
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,700,900" rel="stylesheet">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/index2019.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/theme.css" /> -->
+
+    <!-- Custom JS -->
+    <script src="./assets/js/index.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $("body").css("overflow-y", "hidden");
+            setTimeout(function () {
+                $(".loading").addClass("fadeOut");
+                $(".loading").hide();
+                $(".body-content").addClass("fadeIn ");
+                $(".body-content").css("opacity", "1");
+                $("body").css("overflow-y", "auto");
+            }, 0.5 * 1000);
+        });
+        $("#myCarousel").carousel();
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+
+                var $navItem = $(".menu-item");
+                $navItem.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                var $navLogo = $(".nav-logo");
+                if ($(this).scrollTop() > $nav.height())
+                    $navLogo.attr("src", "./assets/img/logo/e-mun-logo-black.png");
+                else
+                    $navLogo.attr("src", "./assets/img/logo/e-mun-logo.png");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- FOR THE APP-->
+    <!-- <a target="_blank" id="myBtn" style="right: 25px;
+    bottom: 20px; position: fixed;z-index: 99;" href="https://bit.ly/KMUN19">
+
+            <div style="border: 2px solid black;">
+            <img style="width: 115px ; height: 125px; " src="https://kiitmun.org/wp-content/uploads/2019/09/munappqr.png" /><br>
+            <span><center> Get the App</center></span>
+            </div>
+        </a> -->
+
+    <!-- LOADING SECTION -->
+    <section class="loading">
+
+        <img src="./assets/img/loader.gif"
+            style="background-color: black;height: 240px !important;width: 240px !important;">
+    </section>
+
+    <section class="body-content darkmode" id="main">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+       <a class="navbar-brand" href="/">
+                <img style="height:65px !important ; margin-top:-4px;" src="assets/img/logo/mun-logo.png" id="img1">
+                <img style="height:65px !important ; margin-top:-4px;" src="assets/img/logo/e-mun-logo.png" id="img2"
+                    class="nav-logo">
+            </a>
+
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="" role="button">
+                    <i class="fa fa-bars toggle-icon" aria-hidden="true"></i>
+                </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse " id="navbar">
+                <ul style="margin-left: 7vw;" class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="menu-item active" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="menu-item" data-toggle="dropdown">MUN</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="committees.html" class="dropdown-item">Committees</li></a>
+                            <!-- <li><a href="agenda.html" class="dropdown-item">Agenda</li></a> -->
+                            <!-- <li><a href="eb.html" class="dropdown-item">Executive Board</li></a> -->
+                            <!-- <li><a href="study-guide.html" class="dropdown-item">Study Guide</a></li> -->
+                            <!--                             <li><a href="newsletter.html" class="dropdown-item">Newsletter</a></li>
+                            <li><a href="rules-and-regulations.html" class="dropdown-item">Rules and Regulations</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item" href="gallery.php">Gallery</a>
+                    </li>
+                       <li class="nav-item dropdown">
+                     <a class="menu-item" data-toggle="dropdown">Partners</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sponsors.html" class="dropdown-item">Sponsors</li></a>
+                            <li><a href="collaborators.html" class="dropdown-item">Collaborators</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="menu-item" href="campus-ambassador.php">Campus Ambassador</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="menu-item" href="contact.php">Contact</a>
+                    </li>
+
+                    <li class="nav-item dropdown-btn">
+                        <a class="menu-item dropdown-btn-item" href="registration.php">Registrations</a>
+                    </li>
+                    <li class="dark">
+                        <img src="assets/img/sun.png" id="icon">
+                    </li>
+            </div>
+        </nav>
+
+        <section style="z-index:1; " id='beta-first'>
+
+            <div class="layer">
+
+                <!--<img src="https://kiitmun.org/wp-content/uploads/2018/06/KIIT-Logo-New.png" style="height:50px;width:100px;margin-left:50px;margin-top:60px;">-->
+                <img src="./assets/img/logo/mun-logo.png">
+
+                <center>
+
+                    <!-- <a id="we" href="registration.php" style="background-color: #bab86c;
+                       width: 13em; font-family: 'Poppins'; font-weight: bold;" class="btn btn-lg btn-block" role="button" aria-pressed="true">Register Close</a> -->
+
+                    <!-- <br> -->
+                    <br><br>
+                    <div style="color:white;">
+                        <h2 style="font-family:Poppins">A Decade of Excellence</h2>
+                    </div>
+
+                    <!-- <h4 style="color: white">28th - 30th September</h4> -->
+                    <h3 style="font-family:Poppins;">#LiterateToLiberate</h3>
+                </center>
+
+            </div>
+
+            <!-- CAROUSEL ITEMS -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <!-- <div class="carousel-item item active">
+                        <img src="./assets/img/carousel/carousel8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item item ">
+                        <img src="./assets/img/carousel/carousel7.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item item ">
+                        <img src="./assets/img/carousel/carousel6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item item ">
+                        <img src="./assets/img/carousel/carousel5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                
+                    <div class="carousel-item item ">
+                        <img src="./assets/img/carousel/carousel4.jpg" class="d-block w-100" alt="...">
+                    </div> -->
+                    <div class="carousel-item item active ">
+                        <img src="./assets/img/carousel/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="carousel-item item">
+                        <img src="./assets/img/carousel/2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item item">
+                        <img src="./assets/img/carousel/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item item">
+                        <img src="./assets/img/carousel/4.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                    <center>
+                      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <div class="mx-auto" style="position: center;margin-left: auto; margin-right: auto;">
+                                <div class="background">
+                            <img src="./assets/img/Perks Insta.png"
+                                    style="width: 100%;height:100%;">
+                                </div>
+                                    <br><br>
+                                <li class="dropdown-btn-alert" style="position: center;">
+                                        <a class="menu-item dropdown-btn-item" href="registration.php">Registrations</a>
+                                </li>
+                            </center>
+                        <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close" style="font-size: 30px;color: aqua;">-->
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <a class="left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        </section>
+
+
+
+        <div class="muntimer">
+            <div class="timer">
+
+
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        let timer_ = 1662690600
+                        let flipdown = new FlipDown(timer_)
+                            .start()
+                            .ifEnded(() => {
+                                document.querySelector(".flipdown").innerHTML = `<h2>Timer is ended</h2>`;
+                            })
+                    })
+                </script>
+                <div id="flipdown" class="flipdown"></div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- KIIT Model United Nations Sections-->
+        <section id="about-sixth">
+            <h1>KIIT International<br /><b>Model United<br> Nations</b></h1>
+            <hr><br>
+            <span id="sec-general" style="font-family:'Montserrat', sans-serif !important;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+
+                KIIT International Model United Nations is one of the largest simulations of the United Nations across
+                the globe, coordinated by KIIT University.Founded since 2013, the event has attained a higher benchmark
+                with every edition. KIIT International MUN 2016, being the largest MUN hosted across the globe with
+                around
+                2500 delegates engaging themselves. Apart from renowned institutions and Indian organisations assisting,
+                various countries from all corners of the globe are participating in various fields.<br>
+
+                It's a fantastic opportunity to mingle with delegates from all walks of life while learning the
+                intricacies
+                of diplomacy and governance from a carefully selected group of Executive Board Members who are simply
+                the
+                best. The three-day event features lively conversations and extensive research, as well as something to
+                look
+                forward to at the end of each day.<br>
+
+                With cultural shows, stand-up comedy and networking dinner- KIIT International MUN not only stresses
+                upon peace
+                and promotes diplomacy but also holds up to an individual’s perception towards socialization.<br>
+
+                The epidemic has undoubtedly altered the definition of adaptation. In Spite of the worst circumstances
+                of
+                a sudden flip from the offline ongoing interactive sessions to an online mode within just a couple of
+                days
+                had been a challenging task. However the KIIT International MUN had successfully pushed its limits,
+                thus emerging with the MUN. During the pandemic, KIIT MUN had collaborated with many organizations
+                like
+                Médecins Sans Frontières, CURE International, Heidelberg Model United Nations(HDMUN) and many other
+                prestigious organizations. Surely, the world will recover from such adversity. Stay safe till then, and
+                enjoy the conference from the security of your own homes.
+
+            </span>
+        </section>
+
+        <!-- Message from the Secretary General Section-->
+        <section id="about-sixth">
+            <h1 class="sec-general">Message from <br /><b>Secretary<br> General</b></h1>
+            <hr>
+
+            <center>
+                <img style="border-radius:50%;height:200px;width:250px;box-shadow:2px 3px 18px 2px black;"
+                    src="./assets/img/members/sagnik-ghosh.png">
+            </center>
+            <br>
+
+            <span id="sec-general" style=" color: #bab86c;
+                    font-family: 'Montserrat', sans-serif !important;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+
+                <b>Respected faculty members, delegates, and my Secretariat,</b> <br><br>
+
+                In the words of David Viscott, “If you have the courage to begin, you have the courage to succeed.”
+
+                It brings me great joy and pride to invite you all to the annual KIIT International Model United Nations
+                Conference, on behalf of all the respected faculty members and the Secretariat here at the Kalinga
+                Institute of Industrial Technology. This year, after two successive editions held online,
+                the conference will be offline and will be convened from the 9th to the 11th of September 2022. <br>
+
+                Ever since the pandemic struck the globe more than two years ago, the world was faced with multilayered
+                problems and unprecedented challenges that caught us all unaware. Now, as we embark on the path of
+                recovery towards a brighter and better future, it is essential to hold our spirits high while nurturing
+                objectives that aim at preserving world peace and unity. Fueling ourselves with this ideology and the
+                optimistic anticipation of what lies ahead, my secretariat has committed to the glory of the KIIT
+                International Model United Nations. Despite trying times that have caused us both physical and mental
+                duress, it is inspirational to see your adherence to this Model United Nations conference. The doors to
+                artful diplomacy through dialogue are inspired and endorsed by the international cooperation that all of
+                us stand for, against war, suffering, and global distress. By supporting peace and united thinking about
+                tackling world problems that pose a threat to humanity, we can encourage millions across the globe to
+                put down weapons in exchange for goodwill and harmony.
+                <br>
+
+                The United Nations is currently involved in undertaking multi-faceted responsibilities pertaining to
+                health, peace, security, and other relevant strategies at the recovering world economy and the overall
+                impact due to the pandemic and other socio-political issues that affect the world and all global
+                citizens. Through the UN, the world is united disregarding differences for the sake of greater good of
+                humanity and benevolence. The use of diplomatic dialogue as the ultimate weapon against issues that
+                threaten mankind is facilitated as world leaders and diplomats stand under one shed representing
+                the very essence of international cooperation.<br>
+                The Secretariat of KIIT International Model United Nations is pledged to upholding the spirit that the
+                UN stands for and it is my very pleasure to head this conference as its Secretary General for this
+                edition. We stand by each delegate and by anyone who shares our belief and our aim of seeking a united
+                and coordinated world that is hopeful and optimistic. We seek your enthusiasm and energy that the
+                recovering society needs and we are delightedly looking forward for your ideas to make a difference and
+                for them to provide solutions while addressing the adversities of our time and era to welcome a just,
+                sustainable, and robust future.
+                <br>
+                I assure you that KIIT International Model United Nations will keep the flag raised high, living up to
+                expectations and its legacy. We hope that all the delegates here have a wonderful unforgettable
+                experience that imprints on their mind and stays with them in the archives of their cherished memories
+                while learning values and enriching skills that makes a difference in the world.
+                <br>
+                As global citizens, we must embark on a journey to help ourselves develop our personalities for becoming
+                better and greater in the world. With this, I extend my heartfelt regards to you and the best wishes for
+                the experience that awaits. May this edition of KIIT International MUN with your valuable participation
+                and support be an experience worth remembering for us all.
+                <br><br>
+
+                Sincerely, <br>
+
+                Sagnik Ghosh,<br>
+
+                Secretary-General,
+                KIIT International MUN 2022
+
+
+
+            </span>
+        </section>
+
+        <!--IMAGE of committees-->
+        <!-- <section>
+            <a href="https://kiitmun.org/committees/">
+                <img src="https://kiitmun.org/wp-content/uploads/2019/07/committee-list-लाै.jpg"
+                    style="width:100%;height:auto;"></a>
+        </section>
+        <br>
+        <section>
+            <a href="https://kiitmun.org/registration/"><img src="https://kiitmun.org/wp-content/uploads/2019/07/IP.jpg"
+                    style="width:100%;height:auto;"></a>
+        </section> -->
+
+
+        <!-- IN OTHER MEDIA -->
+        <section id="beta-fourth">
+            <h1>In Other <b>Media</b></h1>
+            <hr>
+            <span style="font-size: 17px;">We Are Gearing Up For The Much Awaited Model United Nations<br />Just Like
+                You Are.</span>
+
+            <div class="row">
+                <div class="m-auto">
+                    <center>
+                        <div>
+                            <a href="https://www.facebook.com/kiitmun/" target="_blank"><button type="button"
+                                    class="btn btn-social-icon btn-facebook btn-rounded"><i
+                                        class="fa fa-facebook"></i></button></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/instakiitmun/" target="_blank"><button type="button"
+                                    class="btn btn-social-icon btn-instagram btn-rounded"><i
+                                        class="fa fa-instagram"></i></button></a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/kiitmun" target="_blank"><button type="button"
+                                    class="btn btn-social-icon btn-twitter btn-rounded"><i
+                                        class="fa fa-twitter"></i></button></a>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </section>
+
+        <!-- KIIT MUN Insignia-->
+        <section id="beta-fifth">
+            <h1 class="insignia">The KIITMUN <br><b>Insignia</b></h1>
+            <hr>
+            <span style="font-size: 17px;">The helm of the KIITMUN Secretariat, the base of the massive pyramid, the
+                luminary with outstanding
+                contribution in the operations of this entity.<br />Meet the Core Secretariat of KIIT International
+                MUN 2022.</span>
+            <div style="background-color: black;">
+                <div class="row">
+                    <br><br>
+                    <div class="col-xs-12 col-sm-4" style="margin-top: 2.5% !important;">
+                        <center><br><br><img style="border-radius:85%;height:200px;width:230px;"
+                                src="./assets/img/members/sagnik-ghosh.png">
+                        </center>
+                        <h4>Sagnik Ghosh</h4>
+                        <h3>Secretary General</h3>
+                        <a href="tel:+918144021921"><span>+91 8144021921</span></a>
+                        <br><br>
+                        <span>" Shouldering the responsibility of heading the Secretariat of KIIT MUN 2022 as the
+                            Secretary General is a matter of great pride for me. Being a student involved with MUN since
+                            the very first year of my graduation, I have seen the conference and the passion among
+                            participants grow with every subsequent edition. KIIT International MUN being the result of
+                            collaborative teamwork has helped me develop organizational skills that I am sure to take
+                            away with me into the real world. I hope this offline edition following two editions chaired
+                            online will be able to make its mark, living up to the legacy of KIIT International MUN
+                            "</span><br><br>
+                        <hr>
+                    </div>
+                    <div class="col-xs-12 col-sm-4" style="margin-top: 2.5% !important;">
+                        <center><br><br><img style="border-radius:50%;height:200px;width:230px;"
+                                src="./assets/img/members/manas-mishra.png"></center>
+                        <h4>Manas Mishra</h4>
+                        <h3>Deputy Secretary General</h3>
+                        <a href="tel:+916394324923"><span>+91 6394324923</span></a>
+                        <br><br>
+                        <span>" Being the DSG of the gathering this year has been a staggering inclination if you were
+                            to ask me, I can guarantee that this will be a groundbreaking encounter for everybody out
+                            there considering the way that KIIT MUN will be quite possibly one of the most monstrous and
+                            phenomenal procedure this year as in 3 years this is the first occasion that KIIT MUN will
+                            be held offline"</span>
+                        <br>
+                        <hr>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <center><br><br><img style="border-radius:50%;height:200px;width:200px;margin-top: 2.5%;"
+                                src="./assets/img/members/rhea-sinha.png"></center>
+                        <h4>Rhea Sinha</h4>
+                        <h3>Director General</h3>
+                        <a href="tel:+918557912643 "><span>+91 8557912643 </span></a>
+                        <br> <br>
+                        <span>"MUN has been one of my favorite activities since my school days. Right when I enrolled in
+                            KIIT, KIITMUN was something that got me excited and energized. It has been a long journey
+                            from delegating in KIITMUN to organizing it. I genuinely hope each and every participant
+                            this year will have an incredible and enriching learning experience."
+                        </span>
+                        <hr>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-2">
+
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <center><br><br><img style="border-radius:50%;height:200px;width:230px;"
+                                src="./assets/img/members/surarchi-kumar.png"></center>
+                        <h4>Surarchi Kumar</h4>
+                        <h3>Deputy Director General</h3>
+                        <a href="tel:+918260010846"><span>+91 8260010846</span></a>
+                        <br><br>
+                        <span>"There are a couple of things in life that are an essential piece of me. KIITMUN is one of
+                            those things. Right from my freshman year until my senior year, KIITMUN has assisted me with
+                            developing personally and made me a superior version of myself."</span>
+                        <hr>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <center><br><br><img style="border-radius:50%;height:200px;width:200px;"
+                                src="./assets/img/members/om-chaitanya.png"></center>
+                        <h4>Om Chaitanya</h4>
+                        <h3>Chargé D'affaires</h3>
+                        <a href="tel:+919955818809"><span>+91 9955818809</span></a>
+                        <br><br>
+                        <span>" KIITMUN is one of the largest MUN conferences in Asia. It began in the year 2013 and has
+                            been developing from that point onward. This conference has exclusively propelled endless
+                            energetic and youthful personalities and I truly wish that in this edition we will be able
+                            to reach out to more youngsters and make the experience a far more significant one. "</span>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="beta-ninth">
+            <h1>Meet Us <b>Here</b></h1>
+            <hr>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14962.559068831144!2d85.8136923465576!3d20.356495146139697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85a345e1f4fcce86!2sKiiT+Student+Activity+Center-KSAC!5e0!3m2!1sen!2sin!4v1527423728493"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+
+
+        <div class="footer-copyright" id="footer">
+
+            <ul
+                style="list-style:none;background:rgba(0,0,0,0);overflow:hidden;color:#fff;padding:0;text-align: center;margin:0;">
+                <li style="display:inline-block;padding:10px;list-style:none;"><a
+                        href="https://www.facebook.com/kiitmun/" target="_blank"><img src="./assets/img/footer/fb.png"
+                            height="50" width="50"></a></li>
+                <li style="display:inline-block;padding:10px;list-style:none;"><a
+                        href="https://www.instagram.com/instakiitmun/" target="_blank"><img
+                            src="./assets/img/footer/it.png" height="60" width="60"></a></li>
+                <li style="display:inline-block;padding:10px;list-style:none;"><a href="https://twitter.com/kiitmun"
+                        target="_blank"><img src="./assets/img/footer/tw.png" height="50" width="50"></a></li>
+                <li style="display:inline-block;padding:10px;list-style:none;"><a
+                        href="https://www.linkedin.com/in/kiitmun/" target="_blank"><img
+                            src="./assets/img/footer/linkedin.png" height="55" width="55"></a></li>
+
+
+
+            </ul>
+            <center id="cr">
+                Copyright 2022 &copy; KIIT International Model United Nations
+                <br><a href="copyright.pdf" target="_blank">PRIVACY POLICY</a>
+            </center>
+        </div>
+
+
+        <!-- </section> -->
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            // window.onscroll = function () { scrollFunction() };
+
+            // function scrollFunction() {
+            //     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 60) {
+            //         document.getElementById("myBtn").style.display = "block";
+            //     } else {
+            //         document.getElementById("myBtn").style.display = "none";
+            //     }
+            // }
+        </script>
+        <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function () {
+
+                document.getElementById("main").classList.toggle("darkmode");
+                if (document.getElementById("main").classList.contains("darkmode")) {
+                    icon.src = "assets/img/sun.png";
+                } else {
+                    icon.src = "assets/img/moon.png";
+                }
+            }
+        </script>
+</body>
+
+</html>

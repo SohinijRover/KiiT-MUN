@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="darkM.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> KIIT MUN </title>
+    <meta name='description' content="Official Website of KIITMUN 2022">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,700,900" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/index2019.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/theme.css" /> -->
+
+    <!-- Custom JS -->
+    <script src="./assets/js/index.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $("body").css("overflow-y", "hidden");
+            setTimeout(function () {
+                $(".loading").addClass("fadeOut");
+                $(".loading").hide();
+                $(".body-content").addClass("fadeIn");
+                $(".body-content").css("opacity", "1");
+                $("body").css("overflow-y", "auto");
+            }, 0.5 * 1000);
+        });
+        $("#myCarousel").carousel();
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                var $navItem = $(".menu-item");
+                $navItem.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                var $navLogo = $(".nav-logo");
+                if ($(this).scrollTop() > $nav.height())
+                    $navLogo.attr("src", "./assets/img/logo/e-mun-logo-black.png");
+                else
+                    $navLogo.attr("src", "./assets/img/logo/e-mun-logo.png");
+            });
+        });
+    </script>
+
+
+    <style type="text/css">
+        #about-third .content {
+            /*display: :inline block;*/
+            padding: 8vmin 7vmin 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            #about-third .content {
+                text-align: center;
+                margin-bottom: 30px;
+                margin-right: 4% !important;
+                left: 4%;
+
+            }
+        }
+    </style>
+    <style>
+        .fade-carousel .slides .slide-1 {
+            background-image: url('./assets/img/banner/about/about3.jpg');
+            height: 80vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- FOR THE APP-->
+    <!-- <a target="_blank" id="myBtn" style="right: 25px;
+    bottom: 20px; position: fixed;z-index: 99;" href="https://bit.ly/KMUN19">
+
+            <div style="border: 2px solid black;">
+            <img style="width: 115px ; height: 125px; " src="https://kiitmun.org/wp-content/uploads/2019/09/munappqr.png" /><br>
+            <span><center> Get the App</center></span>
+            </div>
+        </a> -->
+
+    <!-- LOADING SECTION -->
+    <section class="loading">
+        <img src="./assets/img/loader.gif"
+            style="background-color: black;height: 240px !important;width: 240px !important;">
+    </section>
+
+    <section class="body-content darkmode" id="main">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <a class="navbar-brand" href="/">
+                <img style="height:65px !important ; margin-top:-4px;" src="assets/img/logo/mun-logo.png" id="img1">
+                <img style="height:65px !important ; margin-top:-4px;" src="assets/img/logo/e-mun-logo.png" id="img2"
+                    class="nav-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="" role="button">
+                    <i class="fa fa-bars toggle-icon" aria-hidden="true"></i>
+                </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse " id="navbar">
+                <ul style="margin-left: 7vw;" class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="menu-item" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="menu-item" data-toggle="dropdown">MUN</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="committees.html" class="dropdown-item">Committees</li></a>
+
+                            <!-- <li><a href="agenda.html" class="dropdown-item">Agenda</li></a> -->
+                            <!-- <li><a href="eb.html" class="dropdown-item">Executive Board</li></a> -->
+                            <!-- <li><a href="study-guide.html" class="dropdown-item">Study Guide</a></li> -->
+                            <!--                             <li><a href="newsletter.html" class="dropdown-item">Newsletter</a></li>
+
+                            <li><a href="rules-and-regulations.html" class="dropdown-item">Rules and Regulations</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="menu-item" href="gallery.php">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="menu-item" data-toggle="dropdown">Partners</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sponsors.html" class="dropdown-item">Sponsors</li></a>
+                            <li><a href="collaborators.html" class="dropdown-item">Collaborators</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="menu-item" href="campus-ambassador.php">Campus Ambassador</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="menu-item" href="contact.php">Contact</a>
+                    </li>
+
+                    <li class="nav-item dropdown-btn">
+                        <a class="menu-item dropdown-btn-item" href="registration.php">Registrations</a>
+                    </li>
+                    <li class="dark">
+                        <img src="assets/img/sun.png" id="icon" >
+                    </li>
+            </div>
+        </nav>
+
+        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+            <!-- Overlay -->
+            <div class="overlay"></div>
+
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item slides active">
+                    <div class="slide-1"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>About Us</h1>
+                            <!-- <h3>Get start your next awesome project</h3> -->
+                        </hgroup>
+                        <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <section id="about-first">
+                <div class="about-back">
+                    <img src="./assets/img/banner/about/about2.jpg">
+                    <div class="layer">
+                        <h1>About Us</h1>
+                    </div>
+                </div>
+            </section> -->
+
+
+        <section id="about-second">
+            <h2 class="first">Previous</h2>
+            <h3 class="second">Editions</h3>
+            <hr>
+            <span class="third" style="font-size: 17px;">
+                One of India's top universities, Kalinga Institute of Industrial Technology (KIIT), is famous for the
+                caliber of its teaching and research. It was established as an industrial training institute in
+                Bhubaneswar in 1992–1993, in a leased home with 12 pupils and 2 teachers. In the age of unpopular
+                schooling and much cautious embracing of globalization, Prof. Achyuta Samanta had a vision for a school
+                that would emphasize
+                academic excellence and offer uncountable chances for students to acquire comprehensive knowledge with
+                very little financial support.
+                <br><br>
+
+                With just three programmes to begin with—Engineering, MBA, and MCA—KIIT's dedication to quality led to
+                the Ministry of HRD, Government of India, awarding it Deemed to be University status under Section 3 of
+                UGC Act, 1956, in 2004. This made KIIT the earliest Institute to achieve the distinction of obtaining
+                University status in less than 6 years, which has been proudly inscribed in the Limca Book of Records.
+                It has been ranked No. 1 among self-financing institutions of the country in the Atal Ranking of
+                Institutions on Innovation Achievements (ARIIA), 2022 of the Ministry of Education, Government of India.
+                It is India's 1st QS 5 Stars Rated University (QS World University Ranking) and is the only University
+                of India to hold the Prestigious ISAS badge (International Associations of University) and the only
+                University of India to win the The Awards Asia for Leadership and Management by Times Higher Education
+                Rankings for its unstinting commitment to its staff and students. Recently, KIIT ranked 8th globally for
+                Reducing Inequalities by the Times Higher Education Impact Rankings 2022 and also ranked 20th by NIRF,
+                Govt. of India.on.
+
+                <br><br>
+                30,000 students are educated at KIIT, who come from 65 different nations and all around India. Through
+                its 23 schools, it offers more than 115 academic programmes, and more than 195 international
+                organizations collaborate with it in the workplace. More than 100 multinational corporations and
+                numerous national companies obtain their personnel from KIIT for placement. For its outstanding
+                contribution in the field of sports and games, KIIT has been awarded as the best Sports University of
+                India (Sportstar Aces Award). The University has a long history of holding numerous international and
+                national seminars, congresses, workshops, and even important sporting events in practically every topic
+                of interest. With its expansive 25 Square Kilometer Academic Township, 23 World Class Campuses, 2500+
+                illustrious Faculty and Researchers, 16 Sports Complexes, largest indoor and outdoor stadiums of any
+                university, 15 Food Courts, and greenest campus in India, KIIT offers a holistic approach to human
+                development that is unmatched in the nation.
+                Instead of resting on its past success and rapid expansion, KIIT looks forward to reaching greater
+                heights in academics, research, and global rankings.
+            </span>
+        </section>
+
+
+
+
+        <section id="about-third">
+            <center>
+                <div class="row">
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 content" style="padding-left: inherit">
+                        <h2>About <b>KIIT</b></h2>
+                        <hr>
+                        <a href="https://kiit.ac.in" target="_blank">
+                            <img style="height: 125px;" width="100%" src="./assets/img/logo/kiit-logo.png">
+                        </a>
+                        <span id="para1" style=" 
+                        color:#bab86c;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+
+                            One of India's top universities, Kalinga Institute of Industrial Technology (KIIT), is
+                            famous for the caliber of its teaching and research. It was established as an industrial
+                            training institute in Bhubaneswar in 1992–1993, in a leased home with 12 pupils and 2
+                            teachers. In the age of unpopular schooling and much cautious embracing of globalization,
+                            Prof. Achyuta Samanta had a vision for a school that would emphasize academic excellence and
+                            offer uncountable chances for students to acquire comprehensive knowledge with very little
+                            financial support. The dedication, tenacity, and fortitude of our Founder and the
+                            contributions of the industrious staff and well-wishers has led KIIT
+                            Deemed to be University to announce itself as one of the Premier Education Hubs of
+                            India.<br><br>
+                            With just three programmes to begin with—Engineering, MBA, and MCA—KIIT's dedication to
+                            quality led to the Ministry of HRD, Government of India, awarding it Deemed to be University
+                            status under Section 3 of UGC Act, 1956, in 2004. This made KIIT the earliest Institute to
+                            achieve the distinction of obtaining University status in less than 6 years, which has been
+                            proudly inscribed in the Limca Book of Records. It has been ranked No. 1 among
+                            self-financing institutions of the country in the Atal Ranking of Institutions on Innovation
+                            Achievements (ARIIA), 2022 of the Ministry of Education, Government of India. It is India's
+                            1st QS 5 Stars Rated University (QS World University Ranking) and is the only University of
+                            India to hold the Prestigious ISAS badge (International Associations of University) and the
+                            only University of India to win the The Awards Asia for Leadership and Management by Times
+                            Higher Education Rankings for its unstinting commitment to its staff and students. Recently,
+                            KIIT ranked 8th globally
+                            for Reducing Inequalities by the Times Higher Education Impact Rankings 2022 and also ranked
+                            20th by NIRF, Govt. of India. <br><br>
+                            30,000 students are educated at KIIT, who come from 65 different nations and all around
+                            India. Through its 23 schools, it offers more than 115 academic programmes, and more than
+                            195 international organizations collaborate with it in the workplace. More than 100
+                            multinational corporations and numerous national companies obtain their personnel from KIIT
+                            for placement. For its outstanding contribution in the field of sports and games, KIIT has
+                            been awarded as the best Sports University of India (Sportstar Aces Award). The University
+                            has a long history of holding numerous international and national seminars, congresses,
+                            workshops, and even important sporting events in practically every topic of interest. With
+                            its expansive 25 Square Kilometer Academic Township, 23 World Class Campuses, 2500+
+                            illustrious Faculty and Researchers, 16 Sports Complexes, largest indoor and outdoor
+                            stadiums of any university, 15
+                            Food Courts, and greenest campus in India, KIIT offers a holistic approach to human
+                            development that is unmatched in the nation.<br><br>
+                            In terms of social and economic empowerment, KIIT University's outreach programme is
+                            enormous. Sports have received virtually no support in terms of developing athletes and
+                            building sports facilities. The accomplishments of the students and their sense of community
+                            on campus and in their workplaces after graduation have motivated us to push even harder to
+                            achieve greater levels of excellence. Instead of resting on its past success and rapid
+                            expansion, KIIT looks forward to reaching greater heights in academics, research, and global
+                            rankings.
+
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 content" style="padding-left: inherit">
+                        <h2>About <b>KISS</b></h2>
+                        <hr>
+                        <a href="https://kiss.ac.in" target="_blank">
+                            <img style="height:100px ;width:100px" src="./assets/img/logo/kiss-logo.png">
+                        </a>
+                        <span id="para2" style="
+                        color:#bab86c;
+                            display: block;
+                            font-size: 17px;
+                            font-weight: 500;
+                            text-align: justify;">
+                            The Kalinga Institute of Social Sciences (KISS) is a residential institution providing free
+                            education, accommodation , medical care, vocational, athletic & artistic training to 70,000
+                            indigenous children. Of these, 30,000 students study at the main campus in Bhubaneswar,
+                            20,000 are alumni and 10,000 study at 10 satellite centers of KISS across Odisha. It has
+                            indirectly impacted over a million tribal children and youth. The students come from
+                            62 different tribal groups within the region, of which 13 are Particularly Vulnerable Tribal
+                            Groups (PVTGs). <br><br>
+
+                            KISS was established in 1992 with the aim of using accessible, free education to empower
+                            children from marginalized
+                            communities. It has now grown to symbolize a revolution for tribal populations of India to
+                            eradicate poverty through education. Over the course of its more than 28-year history, KISS
+                            has peacefully intervened through education and empowerment to arrest dropouts, child
+                            marriage, gender-based harassment, left-wing extremism, proselytising, illiteracy, and
+                            superstition on a huge scale. It has raised awareness of the value of education, the
+                            empowerment of girls, upskilling and vocational empowerment, entrepreneurship, and
+                            cooperation with tribal groups as guardians of the environment and the natural
+                            world.<br><br>
+
+
+
+                            Since 2015, UN-ECOSOC has granted KISS Special Consultative Status, making it the first
+                            unique tribal Deemed to Be University in the world. While making sure that the model
+                            prioritizes indigenous ownership of education, to maintain the history, legacy, and customs
+                            of India's different tribal tribes, and to fully realize the Sustainable Development Goals
+                            2030, KISS proudly adheres to the 3E approach—Educate, Enable, Empower.
+                        </span>
+
+                    </div>
+                </div>
+            </center>
+        </section>
+
+
+        <section id="about-sixth">
+            <h1>About <br /><b>Our Founder</b></h1>
+            <hr>
+            <center><img style="border-radius:50%;height:200px;width:200px;" src="./assets/img/about/samanta.jpg">
+            </center>
+            <br>
+            <span style=" color: black;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+
+                Prof. Achyuta Samanta is an educationist, philanthropist, and social worker. He is the founder of
+                Kalinga Institute of Industrial Technology (KIIT) and Kalinga Institute of Social Sciences (KISS), both
+                educational institutions of global repute and recognition. KIIT is one of the most prominent
+                universities in India and globe for professional education having more than 30,000 students from all
+                over India and 65 other countries. KISS is a home for 60,000 indigenous children all absolutely free.
+                <br><br>
+
+                Besides Education and tribal upliftment, healthcare and rural development, Prof. Samanta has contributed
+                immensely to art, culture, literature, film, media, society and national integration. It is really
+                incredible that the child who lost his father at the age of four, brought up amidst severe poverty and
+                deprivation with seven siblings and a widow mother in a quaint village in Odisha has accomplished this
+                monumental work without any favour or backing in such a short span of time for the society. He has
+                converted the remote village ‘Kalarabanka’, Cuttack into a Smart Village and the entire
+                Manpur Panchayat into a model Panchayat (cluster of villages).<br><br>
+
+                He has been conferred with more than 50 International and National awards and over 200 state awards
+                besides two highest Civilian Awards from Royal Kingdom of Bahrain and Mongolia. He has been conferred
+                with 49 Honorary Doctorate awards from universities in India and abroad. He is the first Odia to be a
+                member of both UGC and AICTE. He is currently the Member of Parliament (Lok Sabha) from Kandhamal,
+                Odisha and also the President of Volleyball Federation of India. Besides, he is the founder of
+                Parliamentarians for Indigenous People and
+                Designated President ( India) of Democracy without Borders.<br><br>
+
+                As a social reformer, he has been propagating “Art of Giving” (philosophy of life), a concept aimed at
+                bringing peace and happiness around the globe, Kanyakiran to promote zero tolerance against gender based
+                violence, Education for all for creating awareness on the importance of Education and many more like New
+                Mind, New Dreams, India Against Negativity, Art of Appreciation to name a few. Despite all his
+                achievements, he leads a simple lifestyle in a two room rented apartment as a bachelor, keeps on
+                marching towards the cause of spreading smiles among millions and achieving zero poverty, zero hunger,
+                zero illiteracy.<br><br>
+
+
+
+
+            </span>
+        </section>
+
+        <section id="about-fourth">
+            <h1>About <br /><b>Art Of Giving</b></h1>
+            <hr>
+            <span style=" color: black;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+
+                <b>Art of Giving</b> is all about creating an unconditional and sustainable abundance of love, peace and
+                happiness, and contentment for others through gestures of kindness and generosity. It was founded by
+                <b>Shri Achyuta Samanta</b> on <b>17 May 2013</b>. The key to peace and happiness lies in unlocking the
+                Art of Giving in each individual. It is a not-for-profit initiative for spreading, supporting, and
+                promoting the practice of the art of giving around the world.<br><br>
+
+                <b>VISION</b>: To bring together the sense of peace and happiness among people of all ages, especially
+                children and youth through genuine acts of giving back to society by the practice of empathy and
+                compassion to the distressed without any discrimination.<br><br>
+
+                <b>MISSION</b>: To make people aware and spread the philosophy of the Art of Giving across all sections
+                of human society worldwide through activities of sharing love, care, compassion, wisdom, knowledge,
+                skills, and talents.
+
+            </span>
+        </section>
+
+        <section id="about-fourth">
+            <h1>About <br /><b>Incredible India</b></h1>
+            <hr>
+            <span style="
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+                One of the oldest civilizations in the world, India is a mosaic of multicultural experiences. With a
+                rich heritage and myriad attractions, the country is among the most popular tourist destinations in the
+                world. It covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the
+                tropical rain forests of the south. As the 7th largest country in the world, India stands apart from the
+                rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct
+                geographical entity.
+
+                Fringed by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers
+                off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. As you
+                travel the expanse of the country, you are greeted by diverse nuances of cuisines, faiths, arts, crafts,
+                music, nature, lands, tribes, history, and adventure sports. India has a mesmeric conflation of the old
+                and the new. As the bustling old bazaars rub shoulders with swanky shopping malls, and majestic
+                monuments accompany luxurious heritage hotels, the quintessential traveler can get the best of both
+                worlds. Head to the mountains, enjoy a beach retreat, or cruise through the golden Thar, India has
+                options galore for all.
+                India is home to the finest architectural heritage, serene ghats, spectacular landscapes, and the
+                largest tiger reserve.
+
+            </span>
+        </section>
+
+
+
+
+        <div class="footer-copyright">
+
+            <ul
+                style="list-style:none;background:rgba(0,0,0,0);overflow:hidden;color:#fff;padding:0;text-align: center;margin:0;">
+                <li style="display:inline-block;padding:10px;list-style:none;"><a
+                        href="https://www.facebook.com/kiitmun/" target="_blank"><img src="./assets/img/footer/fb.png"
+                            height="50" width="50"></a></li>
+                <li style="display:inline-block;padding:10px;list-style:none;"><a
+                        href="https://www.instagram.com/instakiitmun/" target="_blank"><img
+                            src="./assets/img/footer/it.png" height="60" width="60"></a></li>
+                <li style="display:inline-block;padding:10px;list-style:none;"><a href="https://twitter.com/kiitmun"
+                        target="_blank"><img src="./assets/img/footer/tw.png" height="50" width="50"></a></li>
+                <li style="display:inline-block;padding:10px;list-style:none;"><a
+                        href="https://www.linkedin.com/in/kiitmun/" target="_blank"><img
+                            src="./assets/img/footer/linkedin.png" height="55" width="55"></a></li>
+            </ul>
+            <center id="cr">
+                Copyright 2022 &copy; KIIT International Model United Nations
+                <br><a href="copyright.pdf" target="_blank">PRIVACY POLICY</a>
+            </center>
+        </div>
+
+    </section>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+
+            document.getElementById("main").classList.toggle("darkmode");
+            if (document.getElementById("main").classList.contains("darkmode")) {
+                icon.src = "assets/img/sun.png";
+            } else {
+                icon.src = "assets/img/moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

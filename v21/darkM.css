@@ -1,0 +1,104 @@
+.darkmode{
+    background-color:#121212;
+}
+.txt{
+    color:#fafafa;
+}
+#icon{
+    width: 1.9rem;
+    cursor: pointer;
+}
+.dark{
+ margin-left: inherit;
+}
+#cr{
+    color: #d25227 !important;
+}
+
+.alert {
+    position: inherit;
+    display:inline-flex;
+    margin-top: 12.5vh;
+    margin-bottom: 0.9vh;
+    /*margin-left: 30.7vh;
+    margin-right: 28.75vh;*/
+
+    z-index: 2;
+    background-color: #1a0700cb; /*Red*/
+    color: white;
+    /*margin-bottom: 15px;*/
+  }
+  
+.closebtn {
+    margin-left: auto;
+    position: fixed;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 3.76vh;
+    line-height: 1.3vh;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+.closebtn:hover {
+    color: red;
+  }
+
+.dropdown-btn-alert {
+    /* margin-left: 15px;
+    margin-top: 0.63vh;
+    padding-top: 0.31vh;
+    padding-left: 0.63vh;
+    
+    
+    border-radius: 0.63vh 0 0.63vh 0;
+    display: inline-block;
+    height: 2.5vh;
+    cursor: pointer;
+    --initialTextColor: #f2f2f2;
+    --slideTextColor: #d25227;
+    --initialBgColor: #d25227;
+    --slideBgColor: #FFF;
+    color: var(--initialTextColor);
+    background-color: #d25227;
+    transition: 0.3s linear; */
+    border-radius: 10px 0 10px 0;
+    /* background-color: #d25227; */
+    height: 40px;
+    cursor: pointer;
+    --initialTextColor: #f2f2f2;
+    --slideTextColor: #d25227;
+
+    --initialBgColor: #d25227;
+    --slideBgColor: #FFF;
+
+    color: var(--initialTextColor);
+
+    background-color: #d25227;
+    /* background-image: linear-gradient(90deg,
+        var(--initialBgColor) 0%,
+        var(--initialBgColor) 50%,
+        var(--slideBgColor) 50%,
+        var(--slideBgColor) 100%);
+    background-size: 200% 100%; */
+    /* transition: background-position .3s cubic-bezier(.47, .1, 1, .63), */
+    /* color .2s linear; */
+    /* transition-delay: 0.0s, 0.15s; */
+    transition: 0.3s linear;
+}
+.dropdown-btn-alert:hover {
+    background-position: -50% 200%;
+    background-color: #fff;
+    border: 1px solid #d25227;
+}
+.dropdown-btn-alert:hover > a {
+    color: #d25227;
+    
+    border-bottom: 0!important;
+}
+.background {
+    background-size: 40px;
+    width: 400px;
+    height: 400px;
+  }
